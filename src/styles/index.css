@@ -1,0 +1,42 @@
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:         #f0f4f8;
+  --surface:    #ffffff;
+  --border:     #e2e8f0;
+  --text:       #1a202c;
+  --text-muted: #718096;
+  --accent:     #3b82f6;
+  --accent-dark:#2563eb;
+  --danger:     #ef4444;
+  --success:    #10b981;
+  --warning:    #f59e0b;
+  --radius:     12px;
+  --shadow:     0 2px 12px rgba(0,0,0,0.08);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.14);
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select {
+  font-family: inherit;
+  outline: none;
+}

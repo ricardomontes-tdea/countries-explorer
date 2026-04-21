@@ -1,0 +1,50 @@
+.population-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 0 14px;
+  height: 48px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s;
+}
+
+.population-filter:focus-within {
+  border-color: var(--accent);
+}
+
+.population-filter label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.population-filter input[type='number'] {
+  border: none;
+  background: transparent;
+  width: 110px;
+  height: 100%;
+  font-size: 0.88rem;
+  font-family: inherit;
+  color: var(--text);
+}
+
+.population-filter input[type='number']::placeholder {
+  color: var(--text-muted);
+}
+
+/* Quitar flechas del input number */
+.population-filter input[type='number']::-webkit-inner-spin-button,
+.population-filter input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.population-filter-sep {
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
