@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-import CountryCard from "./components/CountryCard";
-import CountryDetail from "./components/CountryDetail";
-import SearchBar from "./components/SearchBar";
-import RegionFilter from "./components/RegionFilter";
+import { CountryCard } from "./components/CountryCard";
+import { CountryDetail } from "./components/CountryDetail";
+import { SearchBar } from "./components/SearchBar";
+import { RegionFilter } from "./components/RegionFilter";
 
 import { getCountries } from "./utils/getCountries";
 
